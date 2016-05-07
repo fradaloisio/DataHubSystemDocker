@@ -10,7 +10,7 @@ RUN apt-get update
 RUN apt-get install -y zip openjdk-7-jre openjdk-7-jdk curl
 # installing DHuS
 RUN mkdir logs
-RUN curl wget https://github.com/SentinelDataHub/DataHubSystem/releases/download/0.9.0-2-hotfix-4/dhus-software-0.9.0-2-hotfix-4-distribution.shar
+RUN curl https://github.com/SentinelDataHub/DataHubSystem/releases/download/0.9.0-2-hotfix-4/dhus-software-0.9.0-2-hotfix-4-distribution.shar
 
 RUN chmod +x dhus-software-0.9.0-2-hotfix-4-distribution.shar
 RUN ./dhus-software-0.9.0-2-hotfix-4-distribution.shar
