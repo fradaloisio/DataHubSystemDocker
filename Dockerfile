@@ -7,10 +7,10 @@ MAINTAINER Francesco DAloisio - fdaloisio@gmail.com
 
 # installing dep
 RUN apt-get update
-RUN apt-get install -y zip openjdk-7-jre openjdk-7-jdk wget
+RUN apt-get install -y zip openjdk-7-jre openjdk-7-jdk
 # installing DHuS
 RUN mkdir logs
-RUN wget https://github.com/SentinelDataHub/DataHubSystem/releases/download/0.9.0-2-hotfix-4/dhus-software-0.9.0-2-hotfix-4-distribution.shar
+ADD https://github.com/SentinelDataHub/DataHubSystem/releases/download/0.9.0-2-hotfix-4/dhus-software-0.9.0-2-hotfix-4-distribution.shar .
 
 RUN chmod +x dhus-software-0.9.0-2-hotfix-4-distribution.shar
 RUN ./dhus-software-0.9.0-2-hotfix-4-distribution.shar
